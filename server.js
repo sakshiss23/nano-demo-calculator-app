@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 1337;
+const PORT = process.env.PORT || 8080;
 
 const baseUrl = '/calculator'
 
@@ -28,3 +28,4 @@ app.use(baseUrl, baseRouter);
 app.listen(PORT, () => {
     console.log("Server running at PORT", PORT);
 });
+
